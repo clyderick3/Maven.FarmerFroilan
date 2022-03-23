@@ -1,8 +1,17 @@
 package com.zipcodewilmington.froilansfarm;
 
 public class Aircraft extends Vehicle{
-    public void fly() {
-        // moves
+    private boolean inAir = false;
 
+    public void fly() {
+        inAir = true;
+    }
+
+    public void land() {
+        inAir = false;
+    }
+
+    public boolean inAirStatus() {
+        return inAir;
     }
 }

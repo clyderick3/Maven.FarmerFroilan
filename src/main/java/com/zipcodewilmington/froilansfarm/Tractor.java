@@ -5,7 +5,11 @@ public class Tractor extends Vehicle implements FarmVehicle{
         // harvests a Crop
     }
 
-    public boolean operate() {
+    public boolean operate(Person person, Crop[] crop) {
+        return false;
+    }
+
+    public boolean operate(Person person, CropRow[] cropRow) {
         return false;
     }
 }

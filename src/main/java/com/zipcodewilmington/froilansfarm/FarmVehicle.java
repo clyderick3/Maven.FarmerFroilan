@@ -1,5 +1,6 @@
 package com.zipcodewilmington.froilansfarm;
 
-public interface FarmVehicle {
-    public boolean operate(); // TODO - confirm return type and inputs (probs param is famr object?)
+public interface FarmVehicle<T extends Person> {
+
+    public boolean operate(T person, CropRow... cropRow);
 }

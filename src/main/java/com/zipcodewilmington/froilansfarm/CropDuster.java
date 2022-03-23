@@ -1,10 +1,31 @@
 package com.zipcodewilmington.froilansfarm;
 
 public class CropDuster extends Aircraft implements FarmVehicle{
-    public boolean operate() {
-        return false;
+    public Farm farm;
+
+    public CropDuster(Farm farm) {
+        this.farm = farm;
+    }
+
+    public boolean fertilize(CropRow... cropRows) {
+        boolean successful = false;
+        if (inAirStatus() == true) {
+            for (CropRow cropRow : cropRows) {
+                cropRow.fertilize();
+            }
+            successful = true;
+        }
+        return successful;
+    }
+
+    public boolean operate(Person person, CropRow[] cropRows) {
+        boolean successful = false;
+        if (person instanceof Pilot) {
+            fly();
+            fertilize(cropRows);
+            land();
+            successful = true;
+        }
+        return successful;
     }
 }
-
-// fly
-// fertilize - toggles hasbeenfertilized variable in Crops, return boolean, given crop row
