@@ -12,4 +12,8 @@ public class Farmer extends Person implements Rider, Botanist{
     public void dismount() {
 
     }
+
+    public void plant(Crop plantType, CropRow cropRow) {
+
+    }
 }

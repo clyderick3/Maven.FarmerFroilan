@@ -1,5 +1,5 @@
 package com.zipcodewilmington.froilansfarm;
 
-public interface Botanist {
-    void plant(); // TODO - return type (might be crop) and inputs (probably croprow)
+public interface Botanist<T extends Crop> {
+    void plant(T plantType, CropRow cropRow); // TODO - return type (might be crop)
 }
