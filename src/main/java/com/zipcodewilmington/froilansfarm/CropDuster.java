@@ -5,3 +5,6 @@ public class CropDuster extends Aircraft implements FarmVehicle{
         return false;
     }
 }
+
+// fly
+// fertilize - toggles hasbeenfertilized variable in Crops, return boolean, given crop row
