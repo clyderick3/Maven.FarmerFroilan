@@ -1,9 +1,6 @@
 package com.zipcodewilmington.froilansfarm;
 
 public class Farmer extends Person implements Rider, Botanist{
-    public void plant() {
-
-    }
 
     public void mount() {
 
@@ -13,7 +10,9 @@ public class Farmer extends Person implements Rider, Botanist{
 
     }
 
-    public void plant(Crop plantType, CropRow cropRow) {
+    public boolean plant(Crop plantType, CropRow cropRow) {
+        // for (int i = 0; i < )
 
+        return false; // // 10 plants in a croprow
     }
 }
