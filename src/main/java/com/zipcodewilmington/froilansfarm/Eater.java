@@ -1,6 +1,8 @@
 package com.zipcodewilmington.froilansfarm;
 
-public interface Eater<T extends Edible> { // TODO <T implements Edible>
-
-    boolean eat(T... food); // TODO confirm return type, add input
+public interface Eater<T extends Edible> {
+    default boolean eat(T... food) {
+        boolean hasEaten = true;
+        return hasEaten;
+    }
 }
