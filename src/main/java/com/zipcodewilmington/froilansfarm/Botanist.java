@@ -1,5 +1,6 @@
-package com.zipcodewilmington.froilansfarm;
+package com.zipcodewilmington.froilansfarm; // DONE
 
 public interface Botanist<T extends Crop> {
-    void plant(T plantType, CropRow cropRow); // TODO - return type (might be crop)
+    boolean plant(T plantType, CropRow cropRow);
 }
+

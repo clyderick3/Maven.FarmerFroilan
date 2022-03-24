@@ -1,4 +1,4 @@
-package com.zipcodewilmington.froilansfarm;
+package com.zipcodewilmington.froilansfarm; // DONE
 
 public abstract class Animal<T extends Edible> implements NoiseMaker, Eater<T>{
 
@@ -7,7 +7,7 @@ public abstract class Animal<T extends Edible> implements NoiseMaker, Eater<T>{
         return hasEaten;
     }
 
-    public String makeNoise() { // TODO
-        return null;
+    public String makeNoise() {
+        return "NOISE AND SOUNDS, ETC.";
     }
 }
