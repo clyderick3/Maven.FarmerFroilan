@@ -16,7 +16,7 @@ public class Farmer extends Person implements Rider, Botanist {
 
     }
 
-    public void plant(Crop plantType, CropRow cropRow) {
-
+    public boolean plant(Crop plantType, CropRow cropRow) {
+    return true;
     }
 }
