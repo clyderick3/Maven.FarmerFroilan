@@ -1,14 +1,24 @@
-package com.zipcodewilmington.froilansfarm;
+package com.zipcodewilmington.froilansfarm; // DONE
 
 public class Aircraft extends Vehicle{
     private boolean inAir = false;
 
-    public void fly() {
-        inAir = true;
+    public boolean fly() {
+        boolean successful = false;
+        if (inAir == false) {
+            successful = true;
+            inAir = true;
+        }
+        return successful;
     }
 
-    public void land() {
-        inAir = false;
+    public boolean land() {
+        boolean successful = false;
+        if (inAir == true) {
+            successful = true;
+            inAir = false;
+        }
+        return successful;
     }
 
     public boolean inAirStatus() {
