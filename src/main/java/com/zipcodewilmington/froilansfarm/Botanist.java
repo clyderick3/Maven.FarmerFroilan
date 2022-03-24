@@ -1,6 +1,5 @@
-package com.zipcodewilmington.froilansfarm; // DONE
+package com.zipcodewilmington.froilansfarm;
 
-public interface Botanist<T extends Crop> {
-    boolean plant(T plantType, CropRow cropRow);
+public interface Botanist {
+    <T extends Crop> boolean plant(T plantType, CropRow cropRow); 
 }
-

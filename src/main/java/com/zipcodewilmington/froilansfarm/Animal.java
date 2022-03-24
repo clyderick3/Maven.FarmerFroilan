@@ -1,7 +1,8 @@
 package com.zipcodewilmington.froilansfarm; // DONE
 
-public abstract class Animal<T extends Edible> implements NoiseMaker, Eater<T>{
+public abstract class Animal implements NoiseMaker, Eater{
 
+<<<<<<< master
     public boolean eat(T... food) {
         boolean hasEaten = true;
         return hasEaten;
@@ -10,4 +11,6 @@ public abstract class Animal<T extends Edible> implements NoiseMaker, Eater<T>{
     public String makeNoise() {
         return "NOISE AND SOUNDS, ETC.";
     }
+=======
+>>>>>>> master
 }

@@ -4,9 +4,9 @@ public class Person<T extends Edible> extends Animal{
     public Farm farm = new Farm();
 
     public void Person(){
-
     }
-
+  
+    @Override
     public boolean eat(Edible... food) {
         int foodItemsConsumed = 0;
         for (Edible foodItem : food) {
@@ -31,3 +31,10 @@ public class Person<T extends Edible> extends Animal{
     }
 
 }
+
+    @Override
+    public String makeNoise() {
+        return "Argh";
+    }
+}
+
