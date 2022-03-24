@@ -1,8 +1,10 @@
 package com.zipcodewilmington.froilansfarm;
 
+import com.zipcodewilmington.froilansfarm.Animals.Person.Person;
+import com.zipcodewilmington.froilansfarm.Food.EdibleEgg;
+import com.zipcodewilmington.froilansfarm.Food.EarCorn;
+import com.zipcodewilmington.froilansfarm.Food.Tomato;
 import org.junit.Assert;
-
-import java.util.ArrayList;
 
 class ScratchTests {
 
