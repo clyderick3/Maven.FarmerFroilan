@@ -1,4 +1,9 @@
-package com.zipcodewilmington.froilansfarm;
+package com.zipcodewilmington.froilansfarm.Animals;
+
+import com.zipcodewilmington.froilansfarm.Animals.Person.Person;
+import com.zipcodewilmington.froilansfarm.Animals.Person.Rider;
+import com.zipcodewilmington.froilansfarm.Plants.Crop;
+import com.zipcodewilmington.froilansfarm.ShelterAndStorage.CropRow;
 
 public class Farmer extends Person implements Rider, Botanist{
 
@@ -10,9 +15,8 @@ public class Farmer extends Person implements Rider, Botanist{
 
     }
 
-    public boolean plant(Crop plantType, CropRow cropRow) {
-        // for (int i = 0; i < )
-
-        return false; // // 10 plants in a croprow
+    @Override
+    public <T extends Crop> boolean plant(T plantType, CropRow cropRow) {
+        return false;
     }
 }
