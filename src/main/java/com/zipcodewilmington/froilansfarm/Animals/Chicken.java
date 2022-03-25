@@ -3,7 +3,12 @@ package com.zipcodewilmington.froilansfarm.Animals;
 import com.zipcodewilmington.froilansfarm.GeneralInterfaces.Produce;
 
 public class Chicken extends Animal implements Produce {
-    public void yield() { // TODO yields edibleEggs
+    Boolean isFertilized =false;
+    public void yield() {
+//        if (isFertilized=false)
+//            return EdibleEgg;
+//        else
+//            return new Chicken();
     }
 
     @Override
