@@ -1,8 +1,9 @@
 package com.zipcodewilmington.froilansfarm.Vehicle; // DONE
 
+import com.zipcodewilmington.froilansfarm.Animals.Person.Pilot;
 import com.zipcodewilmington.froilansfarm.Vehicle.Vehicle;
 
-public class Aircraft extends Vehicle {
+public class Aircraft extends Vehicle <Pilot> {
     private boolean inAir = false;
 
     public boolean fly() {
