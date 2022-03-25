@@ -9,8 +9,10 @@ import com.zipcodewilmington.froilansfarm.ShelterAndStorage.Farm;
 
 public class Person<T extends Edible> extends Animal {
     public Farm farm = new Farm();
+    String name;
 
-    public void Person(){
+    public Person(String name){
+        this.name=name;
     }
   
     @Override

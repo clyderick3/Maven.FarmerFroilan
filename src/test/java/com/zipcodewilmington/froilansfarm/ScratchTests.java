@@ -10,7 +10,7 @@ class ScratchTests {
 
     @org.junit.jupiter.api.Test
     void eatTest() {
-        Person person = new Person();
+        Person person = new Person("");
         EarCorn earCorn1 = new EarCorn();
         EarCorn earCorn2 = new EarCorn();
         EdibleEgg edibleEgg1 = new EdibleEgg();
