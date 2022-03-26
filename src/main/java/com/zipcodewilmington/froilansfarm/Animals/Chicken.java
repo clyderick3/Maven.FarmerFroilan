@@ -1,10 +1,11 @@
 package com.zipcodewilmington.froilansfarm.Animals;
 
 import com.zipcodewilmington.froilansfarm.Food.Edible;
+import com.zipcodewilmington.froilansfarm.Food.EdibleEgg;
 import com.zipcodewilmington.froilansfarm.GeneralInterfaces.Produce;
 
 public class Chicken extends Animal implements Produce {
-    Boolean isFertilized =false;
+    Boolean hasBeenFertilized =false;
 
     @Override
     public String makeNoise() {
@@ -13,10 +14,8 @@ public class Chicken extends Animal implements Produce {
 
     @Override
     public Edible yield(Produce producer) {
-        //        if (isFertilized=false)
-//            return EdibleEgg;
-//        else
-//            return new Chicken();
+        if (!hasBeenFertilized)
+            return new EdibleEgg();
         return null;
     }
 }
