@@ -18,11 +18,10 @@ public class Tractor extends Vehicle implements FarmVehicle {
         boolean successful = false;
         for (CropRow row : cropRows) {
             for (int i = 0; i < row.getCrops().size(); i++) {
-                // Crop crop = (Crop) row.getCrops().get(i);
-                // crop.getGasBeenFertilized();
                 if (row.getCrops().get(i) instanceof TomatoPlant) {
-                    // ((TomatoPlant) row.getCrops().get(i)).getGasBeenFertilized();
-                    // ((TomatoPlant) row.getCrops().get(i)).getGasBeenHarvested();
+                    if (((TomatoPlant) row.getCrops().get(i)).getHasBeenFertilized() == true) {
+                        // row.getCrops().get(i)).yield and add to tomato reserves
+                    }
                 } else if (row.getCrops().get(i) instanceof CornStalk) {
 
                 }
