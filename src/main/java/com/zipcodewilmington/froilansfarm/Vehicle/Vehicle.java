@@ -6,6 +6,6 @@ import com.zipcodewilmington.froilansfarm.GeneralInterfaces.Rideable;
 
 public abstract class Vehicle<T extends Rider> implements NoiseMaker, Rideable <T> {
     public String makeNoise() {
-        return null;
+        return "engine hum";
     }
 }

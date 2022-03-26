@@ -1,4 +1,4 @@
-package com.zipcodewilmington.froilansfarm.Vehicle; // DONE
+package com.zipcodewilmington.froilansfarm.Vehicle;
 
 import com.zipcodewilmington.froilansfarm.Animals.Person.Pilot;
 import com.zipcodewilmington.froilansfarm.Vehicle.Vehicle;
@@ -7,21 +7,13 @@ public class Aircraft extends Vehicle <Pilot> {
     private boolean inAir = false;
 
     public boolean fly() {
-        boolean successful = false;
-        if (inAir == false) {
-            successful = true;
-            inAir = true;
-        }
-        return successful;
+        this.inAir = true;
+        return this.inAir;
     }
 
     public boolean land() {
-        boolean successful = false;
-        if (inAir == true) {
-            successful = true;
-            inAir = false;
-        }
-        return successful;
+        this.inAir = false;
+        return this.inAir;
     }
 
     public boolean inAirStatus() {
