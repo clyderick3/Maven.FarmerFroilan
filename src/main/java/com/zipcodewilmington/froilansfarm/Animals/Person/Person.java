@@ -14,7 +14,11 @@ public class Person<T extends Edible> extends Animal {
     public Person(String name){
         this.name=name;
     }
-  
+
+    public String getName() {
+        return name;
+    }
+
     @Override
     public boolean eat(Edible... food) {
         int foodItemsConsumed = 0;

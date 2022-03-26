@@ -1,11 +1,13 @@
 package com.zipcodewilmington.froilansfarm.Animals.Person;
 
+import com.zipcodewilmington.froilansfarm.Animals.Horse;
 import com.zipcodewilmington.froilansfarm.GeneralInterfaces.Rideable;
 import com.zipcodewilmington.froilansfarm.Vehicle.Aircraft;
 import com.zipcodewilmington.froilansfarm.Vehicle.Vehicle;
 
 public class Pilot extends Person implements Rider {
-    Aircraft aircraft;
+    Rideable rideable;
+
 
     public Pilot(String name) {
         super(name);
@@ -13,8 +15,12 @@ public class Pilot extends Person implements Rider {
 
     @Override
     public boolean mount(Rideable rideable) {
-        if (rideable instanceof Aircraft) {
-            aircraft= (Aircraft) rideable;
+        if (this.rideable!=null)
+            return false;
+        else if (rideable instanceof Aircraft) {
+            this.rideable= rideable;
+            return true;
+        } else if (rideable instanceof Horse){
             return true;
         }
         return false;
@@ -22,11 +28,13 @@ public class Pilot extends Person implements Rider {
 
     @Override
     public boolean dismount(Rideable rideable) {
-        if (aircraft == null){
+        if (this.rideable==null)
             return false;
+        if (this.rideable.equals(rideable)) {
+            this.rideable = null;
+            return true;
         }
-        aircraft = null;
-        return true;
+        return false;
     }
 }
 
