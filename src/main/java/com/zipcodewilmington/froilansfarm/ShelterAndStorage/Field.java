@@ -12,15 +12,17 @@ public class Field {
         cropRows.add(new CropRow());
         cropRows.add(new CropRow());
         cropRows.add(new CropRow());
+        cropRows.add(new CropRow());
+        cropRows.add(new CropRow());
 
     }
 
-    public void setField(){
+    public void setCropRows(ArrayList<CropRow> cropRows){
         this.cropRows = cropRows;
     }
 
-    public int getCropRows(){
-        //return cropRows;
+    public ArrayList<CropRow> getCropRows(){
+        return cropRows;
     }
 
 }
