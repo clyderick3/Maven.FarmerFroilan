@@ -8,7 +8,16 @@ public class Field {
     ArrayList<CropRow> cropRows;
 
     public Field () {
+        cropRows = new ArrayList<>();
+        cropRows.add(new CropRow());
+        cropRows.add(new CropRow());
+        cropRows.add(new CropRow());
 
     }
+
+    public void setField(){
+        this.cropRows = cropRows;
+    }
+
 
 }
