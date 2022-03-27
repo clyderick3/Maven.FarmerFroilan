@@ -30,5 +30,11 @@ class StableTest {
         stable.removeResident(horse);
         Assert.assertFalse(stable.contains(horse));
     }
+    @Test
+    public void checkResidentList(){
+
+    }
+
+
 
 }

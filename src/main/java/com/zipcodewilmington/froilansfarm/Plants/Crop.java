@@ -1,6 +1,8 @@
 package com.zipcodewilmington.froilansfarm.Plants;
 
+import com.zipcodewilmington.froilansfarm.Food.EarCorn;
 import com.zipcodewilmington.froilansfarm.Food.Edible;
+import com.zipcodewilmington.froilansfarm.Food.Tomato;
 import com.zipcodewilmington.froilansfarm.GeneralInterfaces.Produce;
 
 public class Crop <U extends Crop> implements Produce {
@@ -21,8 +23,17 @@ public class Crop <U extends Crop> implements Produce {
     }
 
     @Override
-    public Edible yield(Produce producer) {// yields an edible object depending on its `hasBeenHarvested` and `hasBeenFertilized` flag.
+    public Edible yield(Produce inputPlant) {// yields an edible object depending on its `hasBeenHarvested` and `hasBeenFertilized` flag.
 // takes in input of plant and gives output of edible
+
+        if (inputPlant instanceof TomatoPlant && ((TomatoPlant)inputPlant).hasBeenFertilized) {
+            ((TomatoPlant)inputPlant).setHasBeenHarvested(true);
+            return new Tomato();
+
+        } else if ( inputPlant instanceof CornStalk && ((CornStalk)inputPlant).hasBeenFertilized) {
+            ((CornStalk)inputPlant).setHasBeenHarvested(true);
+            return new EarCorn();
+        }
         return null;
     }
 }

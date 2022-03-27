@@ -25,7 +25,7 @@ class FarmerTest {
     void mount(){
         CropDuster cropDuster = new CropDuster(new Farm());
         Farmer farmer =  new Farmer("");
-        Tractor tractor = new Tractor();
+        Tractor tractor = new Tractor( new Farm());
         Horse horse = new Horse();
         Assert.assertFalse(farmer.mount(cropDuster)); //not right type
         Assert.assertFalse(farmer.dismount(tractor)); //not riding anything
