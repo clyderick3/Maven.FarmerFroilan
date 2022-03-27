@@ -1,6 +1,7 @@
 package com.zipcodewilmington.froilansfarm.ShelterAndStorage;
 
 import com.zipcodewilmington.froilansfarm.Animals.Animal;
+import com.zipcodewilmington.froilansfarm.Animals.Horse;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -18,5 +19,9 @@ public abstract class Shelter <T extends Animal>{
 
     public void removeResident(T resident){
         shelter.remove(resident);
+    }
+
+    public boolean contains(T resident){
+    return shelter.contains(resident);
     }
 }

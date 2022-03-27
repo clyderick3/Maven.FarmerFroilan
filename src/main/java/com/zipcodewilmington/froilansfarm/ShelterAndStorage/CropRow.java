@@ -17,7 +17,14 @@ public class CropRow<T extends Crop> {
     }
 
     public T harvest(int index){
-        // increase count of EarCorn/Tomatoes?
+//        crops.get(index).yield();
+// output should be an edible food object
+        // if harvested add to farm reserves
+
+
+       // implement yield method
+        // store returned food to respective reserves
+
         return null;
     }
 
@@ -25,5 +32,6 @@ public class CropRow<T extends Crop> {
         for (int i = 0; i < crops.size(); i++) {
             crops.get(i).setHasBeenFertilized(true);
         }
+
     }
 }
