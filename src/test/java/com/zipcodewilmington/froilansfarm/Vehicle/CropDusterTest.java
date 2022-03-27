@@ -20,7 +20,7 @@ class CropDusterTest {
         // test input person not pilot
         // test input person pilot
     }
-
+    @Test
     public void cropDusterConstructorTest(){
         CropDuster cropduster = new CropDuster(new Farm());
         Assert.assertTrue(cropduster instanceof Vehicle<Pilot>);

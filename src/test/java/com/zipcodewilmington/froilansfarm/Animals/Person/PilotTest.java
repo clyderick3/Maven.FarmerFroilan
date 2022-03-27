@@ -1,6 +1,7 @@
 package com.zipcodewilmington.froilansfarm.Animals.Person;
 
 import com.zipcodewilmington.froilansfarm.Animals.Horse;
+import com.zipcodewilmington.froilansfarm.ShelterAndStorage.Farm;
 import com.zipcodewilmington.froilansfarm.Vehicle.Aircraft;
 import com.zipcodewilmington.froilansfarm.Vehicle.Tractor;
 import com.zipcodewilmington.froilansfarm.Vehicle.Vehicle;
@@ -49,7 +50,7 @@ class PilotTest {
     @Test
     void mountTractor(){
         Pilot pilot = new Pilot("");
-        Tractor tractor = new Tractor();
+        Tractor tractor = new Tractor(new Farm());
         Assertions.assertFalse(pilot.mount(tractor));
     }
 }
