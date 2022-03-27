@@ -19,5 +19,8 @@ public class Field {
         this.cropRows = cropRows;
     }
 
+    public int getCropRows(){
+        //return cropRows;
+    }
 
 }
