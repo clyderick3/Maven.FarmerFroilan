@@ -16,7 +16,9 @@ public class FarmHouse {
             people = new ArrayList<>();
         }
 
-
+        public void setPeople(ArrayList<Person> people ) {
+            this.people = people;
+    }
 
         public ArrayList<Person> getPeople() {
             return people;
