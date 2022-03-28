@@ -18,6 +18,8 @@ public class FarmHouse {
 
 
 
-
+        public ArrayList<Person> getPeople() {
+            return people;
+    }
 
 }
